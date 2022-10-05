@@ -16,7 +16,7 @@ public class BasePuzzleSolver : MonoBehaviour
         EventManager.Instance.TrySolvePuzzle -= SolvePuzzle;
     }
 
-    void SolvePuzzle(int _areaId, int _solveId) 
+    public virtual void SolvePuzzle(int _areaId, int _solveId) 
     {
         if (_areaId == _puzzleId && _puzzleId == _solveId)
         {

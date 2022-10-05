@@ -9,6 +9,7 @@ public class EventManager : MonoBehaviour
     public static EventManager Instance;
 
     public Action<int, int> TrySolvePuzzle;
+    public Action Escape4thWall;
     public Action OpenGame;
     public Action CloseGame;
 
@@ -42,5 +43,10 @@ public class EventManager : MonoBehaviour
     public void CloseGameEvent()
     {
         CloseGame?.Invoke();
+    }
+
+    public void Escape4thWallEvent()
+    {
+        Escape4thWall?.Invoke();
     }
 }

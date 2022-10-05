@@ -13,12 +13,14 @@ public class PlayerController : MonoBehaviour
         _canMove = true;
         EventManager.Instance.OpenGame += EnablePlayerMovement;
         EventManager.Instance.CloseGame += DisablePlayerMovement;
+        EventManager.Instance.Escape4thWall += Escape4thWall;
     }
 
     private void OnDisable()
     {
         EventManager.Instance.OpenGame -= EnablePlayerMovement;
         EventManager.Instance.CloseGame -= DisablePlayerMovement;
+        EventManager.Instance.Escape4thWall -= Escape4thWall;
     }
 
     private void Update()
@@ -41,5 +43,10 @@ public class PlayerController : MonoBehaviour
     private void EnablePlayerMovement()
     {
         _canMove = true;
+    }
+
+    private void Escape4thWall()
+    {
+        EventManager.Instance.CloseGame -= DisablePlayerMovement;
     }
 }
