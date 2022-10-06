@@ -5,8 +5,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private float _speed = 5.0f;
+    [SerializeField] Transform _transform;
     [SerializeField] Rigidbody2D _rigidbody;
+    [SerializeField] Animator _animator;
     private Vector2 _movement;
+    private Vector2 _lookDirection = Vector2.up;
     private bool _canMove;
     void Start()
     {
@@ -25,7 +28,27 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        _movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));   
+        if (_canMove)
+        {
+            _movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+            if (_movement != Vector2.zero)
+            {
+                _lookDirection = _movement;
+                _animator.Play("Movement");
+            }
+            else
+            {
+                _animator.Play("Idle");
+            }
+            var _yRotation = 0f;
+            if (_lookDirection.x < 0f)
+            {
+                _yRotation = 180f;
+            }
+            _transform.rotation = Quaternion.Euler(0, _yRotation, 0);
+            _animator.SetFloat("MoveX", _lookDirection.x);
+            _animator.SetFloat("MoveY", _lookDirection.y);
+        }
     }
     private void FixedUpdate()
     {
