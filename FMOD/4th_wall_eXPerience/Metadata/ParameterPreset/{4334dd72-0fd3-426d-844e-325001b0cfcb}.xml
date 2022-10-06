@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{4334dd72-0fd3-426d-844e-325001b0cfcb}">
+		<property name="name">
+			<value>Área do Labirinto</value>
+		</property>
+		<relationship name="folder">
+			<destination>{051dc247-6fc9-4e82-84b9-584a8772888a}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{74328f79-a858-45b5-b94a-810ff52fa0e5}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{74328f79-a858-45b5-b94a-810ff52fa0e5}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
