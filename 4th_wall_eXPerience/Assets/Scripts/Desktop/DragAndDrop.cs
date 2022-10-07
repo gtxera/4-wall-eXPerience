@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     [SerializeField] private Canvas canvas;
+    [SerializeField] private int solveId;
     private CanvasGroup canvasGroup;
 
     public RectTransform rectTransform;
@@ -35,7 +36,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        //Debug.Log("OnEndDrag");
+        EventManager.Instance.StartPuzzleEvent(solveId);
         canvasGroup.alpha = 1f;
     }
 

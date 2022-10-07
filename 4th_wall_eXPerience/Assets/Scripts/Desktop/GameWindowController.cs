@@ -7,6 +7,7 @@ public class GameWindowController : MonoBehaviour
     private bool _fullscreen;
     [SerializeField] RectTransform _gameWindowRectTransform;
     private Vector2 _lastPosition;
+    public bool HasMsn = false;
 
     private void Start()
     {
@@ -21,6 +22,21 @@ public class GameWindowController : MonoBehaviour
     {
         EventManager.Instance.OpenGame -= SetFullscreen;
         EventManager.Instance.CloseGame -= SetInvisible;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.name == "Msn")
+        {
+            Debug.Log(HasMsn);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.name == "Msn")
+        {
+            Debug.Log(HasMsn);
+        }
     }
 
     public void SetFullscreen() 

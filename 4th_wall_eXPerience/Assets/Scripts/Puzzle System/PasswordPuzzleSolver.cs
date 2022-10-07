@@ -7,13 +7,16 @@ public class PasswordPuzzleSolver : BasePuzzleSolver
 {
     [SerializeField] GameObject _passwordInputGO;
     [SerializeField] TMP_InputField _passwordInput;
+    [SerializeField] SpriteRenderer _passwordRenderer;
+    [SerializeField] Sprite _openDoorSprite;
     [SerializeField] string _password;
+    [SerializeField] BoxCollider2D _collider;
     public override void SolvePuzzle(int _areaId, int _solveId)
     {
-        if (_passwordInput.text == _password)
+        if (_passwordInput.text == _password && CheckAreaId(_areaId, _solveId))
         {
-            _passwordInputGO.SetActive(false);
-            base.SolvePuzzle(_areaId, _solveId);
+            _passwordRenderer.sprite = _openDoorSprite;
+            Component.Destroy(_collider);
         }
     }
 

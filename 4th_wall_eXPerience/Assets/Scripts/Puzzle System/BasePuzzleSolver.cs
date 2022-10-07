@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BasePuzzleSolver : MonoBehaviour
 {
-    [SerializeField] int _puzzleId;
+    [SerializeField] protected int _puzzleId;
 
     private void Start()
     {
@@ -18,10 +18,15 @@ public class BasePuzzleSolver : MonoBehaviour
 
     public virtual void SolvePuzzle(int _areaId, int _solveId) 
     {
-        if (_areaId == _puzzleId && _puzzleId == _solveId)
+        if (CheckAreaId(_areaId, _solveId))
         {
             gameObject.SetActive(false);
         }
+    }
+
+    public bool CheckAreaId(int _areaId, int _solveId)
+    {
+        return _areaId == _puzzleId && _puzzleId == _solveId;
     }
 
 }
