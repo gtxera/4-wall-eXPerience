@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
     {
         if (_canMove)
         {
-            _rigidbody.MovePosition((Vector2)transform.position + (_movement * _speed * Time.deltaTime));
+            _rigidbody.MovePosition((Vector2)transform.position + (_movement.normalized * _speed * Time.deltaTime));
         }
     }
 
