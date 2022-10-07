@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e3a046b3-5609-44df-b39f-cfcb04df7322}">
+		<property name="assetPath">
+			<value>Windows XP Balloon.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>22.0499992</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.14412698412698413</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{67a02089-6aae-4908-8878-eb92547895a2}</destination>
+		</relationship>
+	</object>
+</objects>

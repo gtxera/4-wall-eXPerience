@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{cf92a0c2-c3b6-4612-bb28-7a4bb36141ce}">
+		<property name="assetPath">
+			<value>BG 2.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>7.3920000000000003</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{67a02089-6aae-4908-8878-eb92547895a2}</destination>
+		</relationship>
+	</object>
+</objects>

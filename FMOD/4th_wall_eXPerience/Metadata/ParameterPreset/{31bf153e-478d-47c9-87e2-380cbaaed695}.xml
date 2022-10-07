@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="ParameterPreset" id="{4334dd72-0fd3-426d-844e-325001b0cfcb}">
+	<object class="ParameterPreset" id="{31bf153e-478d-47c9-87e2-380cbaaed695}">
 		<property name="name">
-			<value>Volume BG</value>
+			<value>Área do Labirinto</value>
 		</property>
 		<relationship name="folder">
 			<destination>{051dc247-6fc9-4e82-84b9-584a8772888a}</destination>
 		</relationship>
 		<relationship name="parameter">
-			<destination>{74328f79-a858-45b5-b94a-810ff52fa0e5}</destination>
+			<destination>{61b8a704-7214-4b38-a700-14bba1bbe3cd}</destination>
 		</relationship>
 	</object>
-	<object class="GameParameter" id="{74328f79-a858-45b5-b94a-810ff52fa0e5}">
+	<object class="GameParameter" id="{61b8a704-7214-4b38-a700-14bba1bbe3cd}">
+		<property name="maximum">
+			<value>10</value>
+		</property>
 		<property name="initialValue">
 			<value>0</value>
 		</property>
