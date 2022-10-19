@@ -27,7 +27,7 @@ public class GameWindowController : MonoBehaviour
     {
         if (collision.name == "Msn")
         {
-            Debug.Log(HasMsn);
+            HasMsn = true;
         }
     }
 
@@ -35,7 +35,7 @@ public class GameWindowController : MonoBehaviour
     {
         if (collision.name == "Msn")
         {
-            Debug.Log(HasMsn);
+            HasMsn = false;
         }
     }
 
