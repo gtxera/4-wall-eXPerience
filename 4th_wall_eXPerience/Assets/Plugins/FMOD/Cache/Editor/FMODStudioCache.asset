@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 827
+--- !u!114 &-5770510981076190449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/EFX/Vit\xF3ria"
+  m_EditorClassIdentifier: 
+  Path: "event:/EFX/Vit\xF3ria"
+  Guid:
+    Data1: 531616885
+    Data2: 1182052869
+    Data3: -1975690570
+    Data4: 806127556
+  Banks:
+  - {fileID: -324061609137447730}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3338
 --- !u!114 &-5684432246732579545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,6 +81,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 829
+--- !u!114 &-4510708902160968646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/EFX/Error
+  m_EditorClassIdentifier: 
+  Path: event:/EFX/Error
+  Guid:
+    Data1: -959482442
+    Data2: 1146600092
+    Data3: -649765191
+    Data4: 231170807
+  Banks:
+  - {fileID: -324061609137447730}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1120
 --- !u!114 &-4301685512629622230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,6 +191,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 516
+--- !u!114 &-695116763033655112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/EFX/Abertura
+  m_EditorClassIdentifier: 
+  Path: event:/EFX/Abertura
+  Guid:
+    Data1: -1347631231
+    Data2: 1265928378
+    Data3: -790680655
+    Data4: 501170590
+  Banks:
+  - {fileID: -324061609137447730}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &-324061609137447730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,10 +233,10 @@ MonoBehaviour:
   Path: ../FMOD/4th_wall_eXPerience/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638017292591106713
+  lastModified: 638018914052696119
   FileSizes:
   - Name: Desktop
-    Value: 487904
+    Value: 776800
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -179,12 +260,15 @@ MonoBehaviour:
   - {fileID: 7982704231800205759}
   - {fileID: -5684432246732579545}
   - {fileID: -8729149281663010410}
+  - {fileID: -5770510981076190449}
+  - {fileID: -4510708902160968646}
+  - {fileID: -695116763033655112}
   EditorParameters: []
   MasterBanks:
   - {fileID: -324061609137447730}
   StringsBanks:
   - {fileID: 7573249780457602326}
-  cacheTime: 638017292591106713
+  cacheTime: 638018914052736019
   cacheVersion: 131591
 --- !u!114 &145953805661125764
 MonoBehaviour:
@@ -249,10 +333,10 @@ MonoBehaviour:
   Path: ../FMOD/4th_wall_eXPerience/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638017292591106713
+  lastModified: 638018914052736019
   FileSizes:
   - Name: Desktop
-    Value: 1106
+    Value: 1220
   Exists: 1
 --- !u!114 &7982704231800205759
 MonoBehaviour:
